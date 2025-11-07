@@ -1,19 +1,16 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './App';
 
-const App = () => {
-  const handleReload = () => {
-    window.location.reload();
-  };
+const rootElement = document.getElementById('root');
+if (!rootElement) {
+  throw new Error("Could not find root element to mount to");
+}
 
-  return (
-    <div>
-      <h1>Hello World</h1>
-      <button onClick={handleReload}>Reload Page</button>
-    </div>
-  );
-};
-
-// Fix: Updated to use React 18's createRoot API, as ReactDOM.render is deprecated.
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
-root.render(<App />);
+const root = ReactDOM.createRoot(rootElement);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

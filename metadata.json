@@ -1,5 +1,5 @@
 {
-  "description": "A simple web page that displays 'Hello World' and a button to reload the page.",
-  "requestFramePermissions": [],
-  "name": "Hello World App"
+  "name": "Prof Informatique",
+  "description": "An interactive educational platform for middle school students, featuring pedagogical units, competency-based exercises, and a performance tracking dashboard, all aligned with official curriculum guidelines.",
+  "requestFramePermissions": []
 }
